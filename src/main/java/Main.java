@@ -10,8 +10,8 @@ public class Main {
         Pet cat = new Pet("cat", "Fluffy", 5, catOwner);
         Pet humster = new Pet("humster", "Rocky", 1, humsterOwner);
 
-        PetHashSetCollection petCollection = new PetHashSetCollection();
-        PetOwnerHashMapCollection petOwnerCollection = new PetOwnerHashMapCollection();
+        HashSetCollection petCollection = new HashSetCollection();
+        HashMapCollection petOwnerCollection = new HashMapCollection();
         ArrayListCollection goodBoyCollection = new ArrayListCollection();
         LinkedListCollection waitingList = new LinkedListCollection();
 
@@ -52,6 +52,7 @@ public class Main {
         waitingList.removeFromWaitingList(humsterOwner);
         waitingList.printWaitingList();
         waitingList.searchInWaitingList(humsterOwner);
+
         }
 
     }

@@ -2,7 +2,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class PetHashSetCollection {
+public class HashSetCollection {
     private Set<Pet> petInfo = new HashSet<>();
 
     protected void addPetInfo(Pet pet){
@@ -11,7 +11,10 @@ public class PetHashSetCollection {
     }
 
     protected void printPets(){
-        System.out.println("[PRINT] All pet data:" + "\n" + petInfo);
+        System.out.println("[PRINT] All pet data:");
+        for(Pet pet : petInfo){
+            System.out.println(pet);
+        }
     }
 
     protected void removePetInfo(Pet pet){
@@ -21,7 +24,7 @@ public class PetHashSetCollection {
 
     protected void searchPet(Pet pet){
         if (petInfo.contains(pet)){
-            System.out.println("[SEARCH] " + pet + "is found");
+            System.out.println("[SEARCH] " + pet + " is found");
         } else {
             System.out.println("Could not find data, recheck your request");
         }

@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class PetOwnerHashMapCollection {
+public class HashMapCollection {
     private Map<Owner, Pet> petOwnerInfo = new HashMap<>();
 
     protected void addPetAndOwner(Owner owner, Pet pet){
@@ -10,7 +10,11 @@ public class PetOwnerHashMapCollection {
     }
 
     protected void printPetAndOwners(){
-        System.out.println("[PRINT] All pet-owners data: " + "\n" + petOwnerInfo);
+        System.out.println("[PRINT] All pet-owners data: ");
+        for(Map.Entry<Owner, Pet> set : petOwnerInfo.entrySet())
+        {
+            System.out.println(set.getKey() + " = " + set.getValue());
+        }
     }
 
     protected void removePetAndOwner(Owner owner){

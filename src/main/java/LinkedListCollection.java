@@ -9,7 +9,10 @@ public class LinkedListCollection {
     }
 
     protected void printWaitingList(){
-        System.out.println("[PRINT] Owners in the Waiting List: " + "\n" + ownersList);
+        System.out.println("[PRINT] Owners in the Waiting List: ");
+        for(Owner owner : ownersList){
+            System.out.println(owner);
+        }
     }
 
     protected void removeFromWaitingList(Owner owner){

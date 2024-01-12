@@ -10,7 +10,11 @@ public class ArrayListCollection {
     }
 
     protected void printGoodBoyList(){
-        System.out.println("[PRINT] All good boys are: " + "\n" + goodBoyList);
+        System.out.println("[PRINT] All good boys are: ");
+        for(Pet pet : goodBoyList)
+        {
+            System.out.println(pet);
+        }
     }
 
     protected void removeToGoodBoyList(Pet pet){
